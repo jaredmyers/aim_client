@@ -1,0 +1,167 @@
+body {
+// background-image: url('media/aimChatBox_e.png');
+// background-size: 1500px 1000px;
+// background-repeat: no-repeat;
+// background-position:center;
+ border-color:red;
+ color:purple;
+}
+/*article {
+background-color:white;
+background: rgba(255, 255, 225, 0.73);
+width:1000px;
+height:1000px;
+margin:auto;
+-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.8);
+-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.8);
+box-shadow: 0px 0px 15px rgba(0,0,0,.8);
+-moz-border-radius: 4px;
+}
+*/
+
+.form {
+width:250px;
+/*background-color:blue;*/
+margin:auto;
+margin-top:1%;
+}
+
+th {
+color: brown;
+}
+
+td {
+color: purple;
+}
+
+label {
+  font-size:15px;
+
+}
+
+
+h1 {
+ color: white;
+ text-align: center;
+}
+h2 {
+ color: purple;
+ text-align: center;
+}
+p {
+ font-family: verdana;
+ font-size: 20px;
+}
+
+
+/*box-shadow: 0 0 40px 40px rgba(205, 164, 95, 3) inset;*/
+
+
+section{
+margin-top:10%;
+text-align:center;
+
+}
+span {
+color: white;
+font-size:30px;
+}
+
+#roxy {
+width: 700px;
+height:400px;
+margin:auto;
+display:block;
+border-radius:5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: pink;
+}
+
+.chatOuterBox {
+height: 1000px;
+width: 1120px;
+//border-style: solid;
+//border-color:red;
+margin:auto;
+ background-image: url('media/aimChatBox_e.png');
+ background-size: 1500px 1000px;
+ background-repeat: no-repeat;
+ background-position:center;
+
+}
+.loginOuter {
+height:50px;
+width:795px;
+//border-style:solid;
+//border-color:blue;
+
+margin-top:55px;
+display:inline-block;
+}
+
+.leftChatNames{
+height: 600px;
+width:100px;
+//border-style:solid;
+//border-color:green;
+float:left;
+display:inline-block;
+margin-top:150px;
+margin-left:20px;
+
+}
+
+.rightTextBox{
+height: 361px;
+width:930px;
+//border-style:solid;
+//border-color:purple;
+float:left;
+background:white;
+margin-top:75px;
+margin-left:30px;
+margin-bottom:75px;
+
+}
+
+.typeBox{
+
+height: 50px;
+width:795px;
+//border-style:solid;
+//border-color:black;
+float:left;
+margin-left:23px;
+}
+
+#loaddata{
+float:right;
+
+}
+#txtinput{
+float:left;
+}
