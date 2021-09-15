@@ -5,7 +5,7 @@
 <html lang="en">
 
   <head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
      <link rel="stylesheet" href="fifthstyle.css" type="text/css" />
      <script type = "text/javascript" src = "formjs.js"> </script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,7 +37,6 @@
         <?php	
           $sql = "SELECT name FROM chatlogin;";
           $result = mysqli_query($conn, $sql);
-        //  $resultCheck = mysqli_num_rows($result);
 
         //display resultz in table
         print "<table align = 'center'>";
@@ -46,20 +45,10 @@
         //grabbing num of rows in rezult
         $num_rows = mysqli_num_rows($result);
 
-
-
         //if rowz, put in html
         if ($num_rows > 0){
           $row = mysqli_fetch_assoc($result);
           $num_fields = mysqli_num_fields($result);
-
-        //  print "$row"
-        //  print "$num_fields"
-
-        //produce column labels
-      //  $keys = array_keys($row);
-       // for($index = 0; $index < $num_fields; $index++)
-        //    print "<th>" . $keys[$index] . "</th>";
 
         print "</tr>";
 
@@ -106,14 +95,7 @@
      });
      });
 
-    // alert("HELLO");
-
 	var timer = null;
-
-
-
-
-
 	function myTimer(timer){
 
 		if(timer != null){
@@ -123,14 +105,10 @@
     		timer = setInterval(function(){
     		$("#ajaxrequest").load("refresh.php");
     		}, 1000);
-//		alert("timer called");
-//		alert(timer);
 		return timer;
 	}
 
 	function cancelTimer(timer){
-//		alert("cancel called");
-//		alert(timer);
 		clearInterval(timer);
 		timer = null;
 
@@ -152,10 +130,6 @@
 	
 	</div>
 
-
-
-
-
         </div>
 
 	<script>
@@ -173,15 +147,7 @@
 	});
 	</script>
 
-
-
-
     </article>
     </body>
-
-
-
-
-
 
 </html>

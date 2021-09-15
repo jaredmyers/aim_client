@@ -3,16 +3,12 @@
 
           $sql = "SELECT name, message FROM chat;";
           $result = mysqli_query($conn, $sql);
-        //  $resultCheck = mysqli_num_rows($result);
 
         //display resultz in table
         print "<table>";
-       # print "<tr align = 'center'>";
 
         //grabbing num of rows in rezult
         $num_rows = mysqli_num_rows($result);
-#	echo $num_rows;
-
 
         //if rowz, put in html
         if ($num_rows > 0){

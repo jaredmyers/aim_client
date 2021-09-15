@@ -6,7 +6,6 @@
 	$post_name = mysqli_real_escape_string($conn, $_REQUEST["loginName"]);
 	$post_pass = mysqli_real_escape_string($conn, $_REQUEST["password"]);
 	$post_recipient = mysqli_real_escape_string($conn, $_REQUEST["recipient"]);
-// $mysqli_real_escape_string($conn, 
 
 	$sqlCheck = "SELECT loginid, name, passwd FROM chatlogin WHERE name = '$post_name';";
 	$result = mysqli_query($conn, $sqlCheck);
@@ -32,7 +31,6 @@
 			}
 
 
-
           $sql = "SELECT name, message FROM chat;";
           $result = mysqli_query($conn, $sql);
         //  $resultCheck = mysqli_num_rows($result);
@@ -56,24 +54,9 @@
 		}
 		
 
-
-
           $row = mysqli_fetch_assoc($result);
           $num_fields = mysqli_num_fields($result);
-
-        //  print "$row"
-        //  print "$num_fields"
-
-        //produce column labels
-       # $keys = array_keys($row);
-       # for($index = 0; $index < $num_fields; $index++)
-        #    print "<th>" . $keys[$index] . "</th>";
-
-       # print "</tr>";
 	
-	
-
-
 	
         //output values of the fields in the rows
         for ($row_num = 0; $row_num < $num_rows; $row_num++) {
@@ -97,11 +80,6 @@
 			}
 
 
-			
-
-
-
-
 	       }else{
 	       print " " . $values[$index];
 		}
@@ -117,25 +95,6 @@
           }
             print "</table>";
 
-
-
-
-
-
-
-
-
-		#	if( $post_message )
-
-		#	{
-
-   		#		echo "Name entered is: ". $post_message ."<br>";
-#
- # 				 echo "Name:" .$post_name . " " . $post_pass . " " . $post_recipient . "<br> "; 
-#				 echo $logid . " ". $name;
-#		 
-#
-#			}
 
 		}else{
 
